@@ -1,0 +1,512 @@
+/**
+ * @name cyber
+ * @author fork
+ * @version 1.0.0
+ * @description A E S T H E T I C underwater journey through neon oceans
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Orbitron', 'VT323', monospace;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    font-family: 'Orbitron', 'VT323', monospace !important;
+}
+
+.theme-dark {
+    /* === Core surfaces === */
+    --surface-color: #0a1628 !important;
+    --surface-rgb: 10, 22, 40 !important;
+    --primary-color: #00f5ff !important;
+    --primary-rgb: 0, 245, 255 !important;
+    --secondary-color: #ff6b9d !important;
+    --secondary-rgb: 255, 107, 157 !important;
+    --highlight-color: #1a2f4d !important;
+    --highlight-rgb: 26, 47, 77 !important;
+    --link-color: #ff00ff !important;
+    --link-rgb: 255, 0, 255 !important;
+    --overlay-color: hsla(210, 60%, 10%, 0.6) !important;
+    --overlay-rgb: 10, 22, 40, 0.6 !important;
+    --imageBorder-color: hsla(180, 100%, 50%, 0.4) !important;
+    --imageBorder-rgb: 0, 245, 255, 0.4 !important;
+
+    /* === Accent usage === */
+    --artist-color: #00f5ff !important;
+    --artist-rgb: 0, 245, 255 !important;
+    --artist-pro-color: #ff6b9d !important;
+    --artist-pro-rgb: 255, 107, 157 !important;
+    --artist-surface-color: #00d4e8 !important;
+    --artist-surface-rgb: 0, 212, 232 !important;
+    --artist-pro-surface-color: #e5598a !important;
+    --artist-pro-surface-rgb: 229, 89, 138 !important;
+
+    /* === Support colors === */
+    --support-bg-color: #00f5ff !important;
+    --support-bg-rgb: 0, 245, 255 !important;
+    --support-text-color: #0a1628 !important;
+    --support-text-rgb: 10, 22, 40 !important;
+    --support-hover-bg-color: #33f7ff !important;
+    --support-hover-bg-rgb: 51, 247, 255 !important;
+    --support-hover-text-color: #0a1628 !important;
+    --support-hover-text-rgb: 10, 22, 40 !important;
+
+    /* === Background layers === */
+    --background-surface-color: #050c16 !important;
+    --background-highlight-color: #1a2f4d !important;
+
+    /* === Fonts === */
+    --font-sans-serif-family: 'Orbitron', 'VT323', monospace !important;
+    --font-monospace-family: 'Orbitron', 'VT323', monospace !important;
+    --font-light-color: #e0f7ff !important;
+    --font-dark-color: #050c16 !important;
+    --font-special-color: #ff00ff !important;
+    --font-error-color: #ff3366 !important;
+    --font-primary-color: #00f5ff !important;
+    --font-secondary-color: #ff6b9d !important;
+    --font-link-color: #ff00ff !important;
+
+    /* === Buttons === */
+    --button-light-background-color: #00f5ff !important;
+    --button-light-font-color: #0a1628 !important;
+    --button-dark-background-color: #0a1628 !important;
+    --button-dark-font-color: #00f5ff !important;
+    --button-special-background-color: #ff00ff !important;
+    --button-special-font-color: #e0f7ff !important;
+
+    /* Focus/active states */
+    --button-focused-box-shadow: 0 0 0 2px #ff00ff inset !important;
+    --button-disabled-opacity: 0.4 !important;
+    --button-active-opacity: 0.6 !important;
+
+    /* Primary buttons */
+    --button-primary-background-color: #00f5ff !important;
+    --button-primary-font-color: #0a1628 !important;
+    --button-primary-hover-font-color: rgba(10, 22, 40, 0.8) !important;
+    --button-primary-disabled-background-color: #007a88 !important;
+    --button-primary-disabled-font-color: #1a2f4d !important;
+    --button-primary-selected-background-color: #00d4e8 !important;
+    --button-primary-selected-font-color: #0a1628 !important;
+    --button-primary-selected-hover-font-color: rgba(10, 22, 40, 0.9) !important;
+    --button-primary-selected-active-font-color: #0a1628 !important;
+
+    /* Secondary buttons */
+    --button-secondary-background-color: #1a2f4d !important;
+    --button-secondary-font-color: #00f5ff !important;
+    --button-secondary-hover-font-color: rgba(0, 245, 255, 0.8) !important;
+    --button-secondary-selected-background-color: #1a2f4d !important;
+    --button-secondary-selected-font-color: #ff00ff !important;
+    --button-secondary-selected-hover-font-color: rgba(255, 0, 255, 0.8) !important;
+
+    /* Tertiary buttons */
+    --button-tertiary-background-color: #050c16 !important;
+    --button-tertiary-font-color: #00f5ff !important;
+    --button-tertiary-selected-font-color: #ff00ff !important;
+
+    /* Links */
+    --link-standard-color: #ff00ff !important;
+    --link-standard-focus-box-shadow: 0 0 0 2px #ff00ff !important;
+    --link-standard-hover-color: #ff33ff !important;
+    --link-primary-color: #00f5ff !important;
+    --link-primary-focus-box-shadow: 0 0 0 2px #ff00ff !important;
+    --link-secondary-color: #ff6b9d !important;
+
+    /* Inputs */
+    --input-default-background-color: #050c16 !important;
+    --input-default-font-color: #00f5ff !important;
+    --input-placeholder-font-color: #3d5a78 !important;
+    --input-focused-border-color: #ff00ff !important;
+
+    /* Toggles */
+    --toggle-focused-box-shadow: 0 0 0 2px #ff00ff !important;
+    --toggle-on-body-color: #00f5ff !important;
+    --toggle-on-handle-color: #0a1628 !important;
+    --toggle-off-body-color: #3d5a78 !important;
+    --toggle-off-handle-color: #ff6b9d !important;
+}
+
+.playbackSoundBadge__showQueue,
+.creatorSubscriptionsButton,
+.sidebarModule__webiEmbeddedModule,
+.spotlightUpsellBanner__background,
+.sidebarContent {
+    display: none !important;
+}
+
+.header__logoLink {
+    background-size: contain !important;
+}
+
+.header {
+    background: 
+        linear-gradient(135deg, rgba(0, 245, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%),
+        rgba(5, 12, 22, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 20px !important;
+    border: 2px solid transparent !important;
+    border-image: linear-gradient(
+        90deg,
+        #00f5ff 0%,
+        #ff00ff 50%,
+        #00f5ff 100%
+    ) 1 !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 245, 255, 0.3),
+        0 0 50px rgba(255, 0, 255, 0.2),
+        inset 0 1px 0 rgba(0, 245, 255, 0.2) !important;
+    animation: waveMotion 6s ease-in-out infinite, neonPulse 3s ease-in-out infinite;
+}
+
+.playControls__inner {
+    background: 
+        linear-gradient(135deg, rgba(0, 245, 255, 0.1) 0%, rgba(255, 0, 255, 0.1) 100%),
+        rgba(5, 12, 22, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 20px !important;
+    border: 2px solid transparent !important;
+    border-image: linear-gradient(
+        90deg,
+        #00f5ff 0%,
+        #ff00ff 50%,
+        #00f5ff 100%
+    ) 1 !important;
+    box-shadow: 
+        0 -8px 32px rgba(0, 245, 255, 0.3),
+        0 0 50px rgba(255, 0, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 245, 255, 0.2) !important;
+    animation: waveMotion 6s ease-in-out infinite reverse, neonPulse 3s ease-in-out infinite;
+}
+
+@keyframes waveMotion {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+}
+
+@keyframes neonPulse {
+    0%, 100% {
+        box-shadow: 
+            0 8px 32px rgba(0, 245, 255, 0.3),
+            0 0 50px rgba(255, 0, 255, 0.2),
+            inset 0 1px 0 rgba(0, 245, 255, 0.2);
+    }
+    50% {
+        box-shadow: 
+            0 8px 32px rgba(0, 245, 255, 0.5),
+            0 0 70px rgba(255, 0, 255, 0.4),
+            inset 0 1px 0 rgba(0, 245, 255, 0.3);
+    }
+}
+
+.sc-button.sc-button-secondary,
+.sc-button.sc-button-secondary:visited {
+    background: 
+        linear-gradient(135deg, rgba(26, 47, 77, 0.8) 0%, rgba(10, 22, 40, 0.9) 100%) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #00f5ff !important;
+    border: 2px solid #00f5ff;
+    border-radius: 16px;
+    padding: 10px 24px;
+    transition:
+        all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        transform 0.2s ease;
+    box-shadow: 
+        0 4px 20px rgba(0, 245, 255, 0.3),
+        0 0 30px rgba(255, 0, 255, 0.2),
+        inset 0 1px 0 rgba(0, 245, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+/* Glitch effect on hover */
+.sc-button.sc-button-secondary::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff00ff;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.sc-button.sc-button-secondary:hover::before {
+    opacity: 0.7;
+    animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Hover effect */
+.sc-button.sc-button-secondary:hover {
+    background: 
+        linear-gradient(135deg, rgba(0, 245, 255, 0.3) 0%, rgba(255, 0, 255, 0.3) 100%) !important;
+    border-color: #ff00ff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 
+        0 8px 30px rgba(0, 245, 255, 0.5),
+        0 0 50px rgba(255, 0, 255, 0.4),
+        inset 0 1px 0 rgba(0, 245, 255, 0.3) !important;
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --special-color: #ff00ff;
+    --special-rgb: 255, 0, 255;
+    --success-color: #00f5ff;
+    --success-rgb: 0, 245, 255;
+    --error-color: #ff3366;
+    --error-rgb: 255, 51, 102;
+    --white-color: #e0f7ff;
+    --white-rgb: 224, 247, 255;
+    --black-color: #050c16;
+    --black-rgb: 5, 12, 22;
+    --goPlus-color: linear-gradient(135deg, #00f5ff, #ff00ff, #ff6b9d);
+    --facebook-color: #00f5ff;
+    --facebook-rgb: 0, 245, 255;
+    --twitter-color: #ff00ff;
+    --twitter-rgb: 255, 0, 255;
+    --pinterest-color: #ff6b9d;
+    --pinterest-rgb: 255, 107, 157;
+    --tumblr-color: #1a2f4d;
+    --tumblr-rgb: 26, 47, 77;
+    --transparent-color: transparent;
+    --success-surface-color: #00394a;
+    --success-surface-rgb: 0, 57, 74;
+    --warning-surface-color: #4a2600;
+    --warning-surface-rgb: 74, 38, 0;
+    --error-surface-color: #4a0020;
+    --error-surface-rgb: 74, 0, 32;
+    --background-light-color: #e0f7ff;
+    --background-dark-color: #050c16;
+    --input-default-border-color: transparent;
+    --input-placeholder-border-color: transparent;
+    --input-invalid-border-color: #ff3366;
+    --input-invalid-font-color: #ff3366;
+    --input-disabled-border-color: transparent;
+    --checkbox-default-background-color: transparent;
+    --checkbox-default-border-color: #3d5a78;
+    --checkbox-checked-background-color: #00f5ff;
+    --checkbox-checked-border-color: #00f5ff;
+    --typography-root-font-size: 1.075em;
+    --typography-display3-font-size: 3.2857142857142856rem;
+    --typography-display3-font-weight: 800;
+    --typography-display3-line-height: 2.5714285714285716rem;
+    --typography-display3-letter-spacing: 0.1em;
+    --typography-display3-font: 800 2.2857142857142856rem/2.5714285714285716rem 'Orbitron', 'VT323', monospace;
+    --typography-display2-font-size: 2.857142857142857rem;
+    --typography-display2-font-weight: 700;
+    --typography-display2-line-height: 2.5714285714285716rem;
+    --typography-display2-letter-spacing: 0.1em;
+    --typography-display2-font: 700 2.857142857142857rem/2.5714285714285716rem 'Orbitron', 'VT323', monospace;
+    --typography-display1-font-size: 4.285714285714286rem;
+    --typography-display1-font-weight: 900;
+    --typography-display1-line-height: 2.5714285714285716rem;
+    --typography-display1-letter-spacing: 0.1em;
+    --typography-display1-font: 900 4.285714285714286rem/2.5714285714285716rem 'Orbitron', 'VT323', monospace;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 700;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading1-font: 700 2rem/2.5714285714285716rem 'Orbitron', 'VT323', monospace;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 600;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading2-font: 600 1.5714285714285714rem/2rem 'Orbitron', 'VT323', monospace;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 600;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading3-font: 600 1.2142857142857142rem/1.7142857142857142rem 'Orbitron', 'VT323', monospace;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 600;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-heading4-font: 600 1rem/1.4285714285714286rem 'Orbitron', 'VT323', monospace;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 500;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-body-font: 500 1rem/1.4285714285714286rem 'Orbitron', 'VT323', monospace;
+    --typography-body1-font-size: 1.2142857142857142rem;
+    --typography-body1-font-weight: 500;
+    --typography-body1-line-height: 1.7142857142857142rem;
+    --typography-body1-font: 500 1.2142857142857142rem/1.7142857142857142rem 'Orbitron', 'VT323', monospace;
+    --typography-body2-font-size: 1rem !important;
+    --typography-body2-font-weight: 500;
+    --typography-body2-line-height: 1.4285714285714286rem;
+    --typography-body2-font: 500 1rem/1.4285714285714286rem 'Orbitron', 'VT323', monospace;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 600;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-heading5-font: 600 0.8571428571428571rem/1.1428571428571428rem 'Orbitron', 'VT323', monospace;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 500;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-captions-font: 500 0.8571428571428571rem/1.1428571428571428rem 'Orbitron', 'VT323', monospace;
+    --typography-heading6-font-size: 0.7142857142857143rem;
+    --typography-heading6-font-weight: 700;
+    --typography-heading6-letter-spacing: 0.2em;
+    --typography-heading6-line-height: 1.1428571428571428rem;
+    --typography-heading6-text-transform: uppercase;
+    --typography-heading6-font: 700 0.7142857142857143rem/1.1428571428571428rem 'Orbitron', 'VT323', monospace;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 700;
+    --typography-micro-letter-spacing: 0.2em;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: uppercase;
+    --typography-micro-font: 700 0.7142857142857143rem/1.1428571428571428rem 'Orbitron', 'VT323', monospace;
+    --spacing-0_25x: 2px;
+    --spacing-0_5x: 4px;
+    --spacing-0_75x: 6px;
+    --spacing-1x: 8px;
+    --spacing-1_25x: 10px;
+    --spacing-1_5x: 12px;
+    --spacing-1_75x: 14px;
+    --spacing-2x: 16px;
+    --spacing-2_5x: 20px;
+    --spacing-3x: 24px;
+    --spacing-3_5x: 28px;
+    --spacing-4x: 32px;
+    --spacing-5x: 40px;
+    --spacing-6x: 48px;
+    --spacing-7x: 56px;
+    --spacing-8x: 64px;
+    --artwork-1x-size: 8px;
+    --artwork-2x-size: 16px;
+    --artwork-3x-size: 24px;
+    --artwork-4x-size: 32px;
+    --artwork-5x-size: 40px;
+    --artwork-6x-size: 48px;
+    --artwork-8x-size: 64px;
+    --artwork-13x-size: 104px;
+    --artwork-15x-size: 120px;
+    --artwork-16x-size: 128px;
+    --artwork-18x-size: 144px;
+    --artwork-20x-size: 160px;
+    --artwork-25x-size: 200px;
+    --artwork-29x-size: 232px;
+    --artwork-40x-size: 320px;
+    --artwork-42x-size: 336px;
+    --artwork-45x-size: 360px;
+    --artwork-64x-size: 512px;
+    --breakpoints-xs: 480;
+    --breakpoints-sm: 768;
+    --breakpoints-md: 1152;
+    --breakpoints-lg: 1440;
+    --breakpoints-xl: 1920;
+    --borderRadiuses-4: 8px;
+    --borderRadiuses-8: 12px;
+    --borderRadiuses-10: 16px;
+    --borderRadiuses-16: 20px;
+    --borderRadiuses-20: 24px;
+    --borderRadiuses-50: 50px;
+    --borderRadiuses-100: 100px;
+}
+
+/* A E S T H E T I C vibes */
+body {
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+/* Neon glow effect */
+* {
+    text-shadow: 
+        0 0 10px rgba(0, 245, 255, 0.7),
+        0 0 20px rgba(255, 0, 255, 0.5),
+        0 0 30px rgba(0, 245, 255, 0.3);
+}
+
+/* Animated underwater bubbles */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(0, 245, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(255, 107, 157, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+    animation: bubbleFloat 20s ease-in-out infinite;
+}
+
+@keyframes bubbleFloat {
+    0%, 100% {
+        transform: translate(0, 0);
+        opacity: 0.6;
+    }
+    25% {
+        transform: translate(10px, -10px);
+        opacity: 0.8;
+    }
+    50% {
+        transform: translate(-10px, 10px);
+        opacity: 1;
+    }
+    75% {
+        transform: translate(10px, 10px);
+        opacity: 0.8;
+    }
+}
+
+/* Grid overlay effect */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 1;
+    animation: gridScroll 30s linear infinite;
+}
+
+@keyframes gridScroll {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
