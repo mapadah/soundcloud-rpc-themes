@@ -1,0 +1,362 @@
+/**
+ * @name Emo SpongeBob
+ * @author fork
+ * @version 1.0.0
+ * @description Emo SpongeBob theme - dark, edgy, and misunderstood
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Rock+Salt&family=Permanent+Marker&display=swap');
+
+body {
+    font-family: 'Permanent Marker', 'Rock Salt', cursive;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    font-family: 'Permanent Marker', 'Rock Salt', cursive !important;
+}
+
+.theme-dark {
+    /* === Core surfaces === */
+    --surface-color: #1a1a1a !important;
+    --surface-rgb: 26, 26, 26 !important;
+    --primary-color: #ffeb3b !important;
+    --primary-rgb: 255, 235, 59 !important;
+    --secondary-color: #999999 !important;
+    --secondary-rgb: 153, 153, 153 !important;
+    --highlight-color: #2a2a2a !important;
+    --highlight-rgb: 42, 42, 42 !important;
+    --link-color: #ff4444 !important;
+    --link-rgb: 255, 68, 68 !important;
+    --overlay-color: hsla(0, 0%, 0%, 0.3) !important;
+    --overlay-rgb: 0, 0, 0, 0.3 !important;
+    --imageBorder-color: hsla(0, 0%, 0%, 0.5) !important;
+    --imageBorder-rgb: 0, 0, 0, 0.5 !important;
+
+    /* === Accent usage === */
+    --artist-color: #ff4444 !important;
+    --artist-rgb: 255, 68, 68 !important;
+    --artist-pro-color: #cc00ff !important;
+    --artist-pro-rgb: 204, 0, 255 !important;
+    --artist-surface-color: #cc0000 !important;
+    --artist-surface-rgb: 204, 0, 0 !important;
+    --artist-pro-surface-color: #9900cc !important;
+    --artist-pro-surface-rgb: 153, 0, 204 !important;
+
+    /* === Support colors === */
+    --support-bg-color: #ff4444 !important;
+    --support-bg-rgb: 255, 68, 68 !important;
+    --support-text-color: #000000 !important;
+    --support-text-rgb: 0, 0, 0 !important;
+    --support-hover-bg-color: #ff6666 !important;
+    --support-hover-bg-rgb: 255, 102, 102 !important;
+    --support-hover-text-color: #000000 !important;
+    --support-hover-text-rgb: 0, 0, 0 !important;
+
+    /* === Background layers === */
+    --background-surface-color: #0a0a0a !important;
+    --background-highlight-color: #2a2a2a !important;
+
+    /* === Fonts === */
+    --font-sans-serif-family: 'Permanent Marker', 'Rock Salt', cursive !important;
+    --font-monospace-family: 'Permanent Marker', 'Rock Salt', cursive !important;
+    --font-light-color: #ffeb3b !important;
+    --font-dark-color: #0a0a0a !important;
+    --font-special-color: #ff4444 !important;
+    --font-error-color: #cc0000 !important;
+    --font-primary-color: #ffeb3b !important;
+    --font-secondary-color: #999999 !important;
+    --font-link-color: #ff4444 !important;
+
+    /* === Buttons === */
+    --button-light-background-color: #ffeb3b !important;
+    --button-light-font-color: #000000 !important;
+    --button-dark-background-color: #0a0a0a !important;
+    --button-dark-font-color: #ffeb3b !important;
+    --button-special-background-color: #ff4444 !important;
+    --button-special-font-color: #000000 !important;
+
+    /* Focus/active states */
+    --button-focused-box-shadow: 0 0 0 2px #ff4444 inset !important;
+    --button-disabled-opacity: 0.4 !important;
+    --button-active-opacity: 0.6 !important;
+
+    /* Primary buttons */
+    --button-primary-background-color: #ffeb3b !important;
+    --button-primary-font-color: #000000 !important;
+    --button-primary-hover-font-color: rgba(0, 0, 0, 0.8) !important;
+    --button-primary-disabled-background-color: #ccaa00 !important;
+    --button-primary-disabled-font-color: #666666 !important;
+    --button-primary-selected-background-color: #ff4444 !important;
+    --button-primary-selected-font-color: #000000 !important;
+    --button-primary-selected-hover-font-color: rgba(0, 0, 0, 0.9) !important;
+    --button-primary-selected-active-font-color: #000000 !important;
+
+    /* Secondary buttons */
+    --button-secondary-background-color: #2a2a2a !important;
+    --button-secondary-font-color: #ffeb3b !important;
+    --button-secondary-hover-font-color: rgba(255, 235, 59, 0.8) !important;
+    --button-secondary-selected-background-color: #2a2a2a !important;
+    --button-secondary-selected-font-color: #ff4444 !important;
+    --button-secondary-selected-hover-font-color: rgba(255, 68, 68, 0.8) !important;
+
+    /* Tertiary buttons */
+    --button-tertiary-background-color: #0a0a0a !important;
+    --button-tertiary-font-color: #ffeb3b !important;
+    --button-tertiary-selected-font-color: #ff4444 !important;
+
+    /* Links */
+    --link-standard-color: #ff4444 !important;
+    --link-standard-focus-box-shadow: 0 0 0 2px #ff4444 !important;
+    --link-standard-hover-color: #ff6666 !important;
+    --link-primary-color: #ffeb3b !important;
+    --link-primary-focus-box-shadow: 0 0 0 2px #ff4444 !important;
+    --link-secondary-color: #999999 !important;
+
+    /* Inputs */
+    --input-default-background-color: #0a0a0a !important;
+    --input-default-font-color: #ffeb3b !important;
+    --input-placeholder-font-color: #555555 !important;
+    --input-focused-border-color: #ff4444 !important;
+
+    /* Toggles */
+    --toggle-focused-box-shadow: 0 0 0 2px #ff4444 !important;
+    --toggle-on-body-color: #ff4444 !important;
+    --toggle-on-handle-color: #000000 !important;
+    --toggle-off-body-color: #333333 !important;
+    --toggle-off-handle-color: #666666 !important;
+}
+
+.playbackSoundBadge__showQueue,
+.creatorSubscriptionsButton,
+.sidebarModule__webiEmbeddedModule,
+.spotlightUpsellBanner__background,
+.sidebarContent {
+    display: none !important;
+}
+
+.header__logoLink {
+    background-size: contain !important;
+}
+
+.header {
+    background: rgba(10, 10, 10, 0.8) !important; /* dark emo background */
+    backdrop-filter: blur(10px) !important; /* applies blur to background */
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 0px !important; /* sharp edges, no softness */
+    border-top: 3px solid #ff4444 !important; /* red emo accent */
+    border-bottom: 3px solid #000000 !important;
+    box-shadow: 0 5px 20px rgba(255, 68, 68, 0.3) !important; /* red glow */
+}
+
+.playControls__inner {
+    background: rgba(10, 10, 10, 0.8) !important; /* dark emo background */
+    backdrop-filter: blur(10px) !important; /* applies blur to background */
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 0px !important;
+    border-top: 3px solid #ff4444 !important; /* red emo accent */
+    border-bottom: 3px solid #000000 !important;
+    box-shadow: 0 5px 20px rgba(255, 68, 68, 0.3) !important; /* red glow */
+}
+
+.sc-button.sc-button-secondary,
+.sc-button.sc-button-secondary:visited {
+    background: rgba(42, 42, 42, 0.9) !important; /* dark background */
+    backdrop-filter: blur(8px); /* blur behind */
+    -webkit-backdrop-filter: blur(8px);
+    color: #ffeb3b !important; /* yellow SpongeBob text */
+    border: 2px solid #ff4444; /* red border */
+    border-radius: 0px; /* no rounded corners - EDGY */
+    padding: 6px 18px; /* spacing */
+    transition:
+        background 0.2s,
+        transform 0.2s,
+        box-shadow 0.2s;
+    box-shadow: 3px 3px 0px #ff4444; /* offset shadow for punk effect */
+    text-transform: lowercase;
+}
+
+/* Hover effect */
+.sc-button.sc-button-secondary:hover {
+    background: rgba(255, 68, 68, 0.3) !important;
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0px #ff4444 !important; /* bigger offset shadow */
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --special-color: #ff4444;
+    --special-rgb: 255, 68, 68;
+    --success-color: #ffeb3b;
+    --success-rgb: 255, 235, 59;
+    --error-color: #cc0000;
+    --error-rgb: 204, 0, 0;
+    --white-color: #ffeb3b;
+    --white-rgb: 255, 235, 59;
+    --black-color: #0a0a0a;
+    --black-rgb: 10, 10, 10;
+    --goPlus-color: linear-gradient(135deg, #ff4444, #cc00ff);
+    --facebook-color: #ff4444;
+    --facebook-rgb: 255, 68, 68;
+    --twitter-color: #ff4444;
+    --twitter-rgb: 255, 68, 68;
+    --pinterest-color: #cc00ff;
+    --pinterest-rgb: 204, 0, 255;
+    --tumblr-color: #2a2a2a;
+    --tumblr-rgb: 42, 42, 42;
+    --transparent-color: transparent;
+    --success-surface-color: #333300;
+    --success-surface-rgb: 51, 51, 0;
+    --warning-surface-color: #331111;
+    --warning-surface-rgb: 51, 17, 17;
+    --error-surface-color: #220000;
+    --error-surface-rgb: 34, 0, 0;
+    --background-light-color: #ffeb3b;
+    --background-dark-color: #0a0a0a;
+    --input-default-border-color: transparent;
+    --input-placeholder-border-color: transparent;
+    --input-invalid-border-color: #cc0000;
+    --input-invalid-font-color: #cc0000;
+    --input-disabled-border-color: transparent;
+    --checkbox-default-background-color: transparent;
+    --checkbox-default-border-color: #555555;
+    --checkbox-checked-background-color: #ff4444;
+    --checkbox-checked-border-color: #ff4444;
+    --typography-root-font-size: 1.075em;
+    --typography-display3-font-size: 3.2857142857142856rem;
+    --typography-display3-font-weight: 400;
+    --typography-display3-line-height: 2.5714285714285716rem;
+    --typography-display3-letter-spacing: -0.04em;
+    --typography-display3-font: 400 2.2857142857142856rem/2.5714285714285716rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-display2-font-size: 2.857142857142857rem;
+    --typography-display2-font-weight: 400;
+    --typography-display2-line-height: 2.5714285714285716rem;
+    --typography-display2-letter-spacing: -0.03em;
+    --typography-display2-font: 400 2.857142857142857rem/2.5714285714285716rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-display1-font-size: 4.285714285714286rem;
+    --typography-display1-font-weight: 400;
+    --typography-display1-line-height: 2.5714285714285716rem;
+    --typography-display1-letter-spacing: -0.02em;
+    --typography-display1-font: 400 4.285714285714286rem/2.5714285714285716rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 400;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading1-font: 400 2rem/2.5714285714285716rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 400;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading2-font: 400 1.5714285714285714rem/2rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 400;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading3-font: 400 1.2142857142857142rem/1.7142857142857142rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 400;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-heading4-font: 400 1rem/1.4285714285714286rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 400;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-body-font: 400 1rem/1.4285714285714286rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-body1-font-size: 1.2142857142857142rem;
+    --typography-body1-font-weight: 400;
+    --typography-body1-line-height: 1.7142857142857142rem;
+    --typography-body1-font: 400 1.2142857142857142rem/1.7142857142857142rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-body2-font-size: 1rem !important;
+    --typography-body2-font-weight: 400;
+    --typography-body2-line-height: 1.4285714285714286rem;
+    --typography-body2-font: 400 1rem/1.4285714285714286rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 400;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-heading5-font: 400 0.8571428571428571rem/1.1428571428571428rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 400;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-captions-font: 400 0.8571428571428571rem/1.1428571428571428rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-heading6-font-size: 0.7142857142857143rem;
+    --typography-heading6-font-weight: 400;
+    --typography-heading6-letter-spacing: 0.1em;
+    --typography-heading6-line-height: 1.1428571428571428rem;
+    --typography-heading6-text-transform: lowercase;
+    --typography-heading6-font: 400 0.7142857142857143rem/1.1428571428571428rem 'Permanent Marker', 'Rock Salt', cursive;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 400;
+    --typography-micro-letter-spacing: 0.07142857142857142rem;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: lowercase;
+    --typography-micro-font: 400 0.7142857142857143rem/1.1428571428571428rem 'Permanent Marker', 'Rock Salt', cursive;
+    --spacing-0_25x: 2px;
+    --spacing-0_5x: 4px;
+    --spacing-0_75x: 6px;
+    --spacing-1x: 8px;
+    --spacing-1_25x: 10px;
+    --spacing-1_5x: 12px;
+    --spacing-1_75x: 14px;
+    --spacing-2x: 16px;
+    --spacing-2_5x: 20px;
+    --spacing-3x: 24px;
+    --spacing-3_5x: 28px;
+    --spacing-4x: 32px;
+    --spacing-5x: 40px;
+    --spacing-6x: 48px;
+    --spacing-7x: 56px;
+    --spacing-8x: 64px;
+    --artwork-1x-size: 8px;
+    --artwork-2x-size: 16px;
+    --artwork-3x-size: 24px;
+    --artwork-4x-size: 32px;
+    --artwork-5x-size: 40px;
+    --artwork-6x-size: 48px;
+    --artwork-8x-size: 64px;
+    --artwork-13x-size: 104px;
+    --artwork-15x-size: 120px;
+    --artwork-16x-size: 128px;
+    --artwork-18x-size: 144px;
+    --artwork-20x-size: 160px;
+    --artwork-25x-size: 200px;
+    --artwork-29x-size: 232px;
+    --artwork-40x-size: 320px;
+    --artwork-42x-size: 336px;
+    --artwork-45x-size: 360px;
+    --artwork-64x-size: 512px;
+    --breakpoints-xs: 480;
+    --breakpoints-sm: 768;
+    --breakpoints-md: 1152;
+    --breakpoints-lg: 1440;
+    --breakpoints-xl: 1920;
+    --borderRadiuses-4: 0px;
+    --borderRadiuses-8: 0px;
+    --borderRadiuses-10: 0px;
+    --borderRadiuses-16: 0px;
+    --borderRadiuses-20: 0px;
+    --borderRadiuses-50: 0px;
+    --borderRadiuses-100: 0px;
+}
+
+/* Emo aesthetic touches */
+body {
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Add diagonal stripes effect like emo band merch */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 68, 68, 0.03) 10px,
+        rgba(255, 68, 68, 0.03) 20px
+    );
+    pointer-events: none;
+    z-index: 1;
+}
