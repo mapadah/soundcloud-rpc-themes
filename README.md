@@ -32,4 +32,8 @@ This repository is themes for "<a href="https://github.com/richardhbtz/soundclou
   <br>
   <img src="https://github.com/mapadah/soundcloud-rpc-themes/blob/main/previews/wingdings.png?raw=true" width="600">
 
+  ### cyber.css
+  <br>
+  <img src="https://github.com/mapadah/soundcloud-rpc-themes/blob/main/previews/cyber.png" width="600">
+
 </details>
