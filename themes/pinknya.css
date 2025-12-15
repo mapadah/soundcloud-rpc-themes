@@ -1,0 +1,345 @@
+/**
+ * @name soft pink
+ * @author fork
+ * @version 1.0.0
+ * @description soft pink theme for soundcloud with gentle aesthetic
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Quicksand', 'Comfortaa', sans-serif;
+    font-weight: 400;
+    text-transform: lowercase !important;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', 'Comfortaa', sans-serif !important;
+}
+
+/* Force lowercase everywhere */
+* {
+    text-transform: lowercase !important;
+}
+
+.theme-dark {
+    /* === Core surfaces === */
+    --surface-color: #2d2232 !important;
+    --surface-rgb: 45, 34, 50 !important;
+    --primary-color: #ffc9e3 !important;
+    --primary-rgb: 255, 201, 227 !important;
+    --secondary-color: #e5a8c5 !important;
+    --secondary-rgb: 229, 168, 197 !important;
+    --highlight-color: #3d2f42 !important;
+    --highlight-rgb: 61, 47, 66 !important;
+    --link-color: #ffb3d9 !important;
+    --link-rgb: 255, 179, 217 !important;
+    --overlay-color: hsla(330, 100%, 85%, 0.1) !important;
+    --overlay-rgb: 255, 179, 217, 0.1 !important;
+    --imageBorder-color: hsla(330, 100%, 85%, 0.05) !important;
+    --imageBorder-rgb: 255, 179, 217, 0.05 !important;
+
+    /* === Accent usage === */
+    --artist-color: #ffb3d9 !important;
+    --artist-rgb: 255, 179, 217 !important;
+    --artist-pro-color: #ffa8d4 !important;
+    --artist-pro-rgb: 255, 168, 212 !important;
+    --artist-surface-color: #ff99cc !important;
+    --artist-surface-rgb: 255, 153, 204 !important;
+    --artist-pro-surface-color: #ff85c2 !important;
+    --artist-pro-surface-rgb: 255, 133, 194 !important;
+
+    /* === Support colors === */
+    --support-bg-color: #ffb3d9 !important;
+    --support-bg-rgb: 255, 179, 217 !important;
+    --support-text-color: #2d2232 !important;
+    --support-text-rgb: 45, 34, 50 !important;
+    --support-hover-bg-color: #ffc9e3 !important;
+    --support-hover-bg-rgb: 255, 201, 227 !important;
+    --support-hover-text-color: #2d2232 !important;
+    --support-hover-text-rgb: 45, 34, 50 !important;
+
+    /* === Background layers === */
+    --background-surface-color: #1f1825 !important;
+    --background-highlight-color: #3d2f42 !important;
+
+    /* === Fonts === */
+    --font-sans-serif-family: 'Quicksand', 'Comfortaa', sans-serif !important;
+    --font-monospace-family: 'Quicksand', 'Comfortaa', sans-serif !important;
+    --font-light-color: #ffe6f2 !important;
+    --font-dark-color: #1f1825 !important;
+    --font-special-color: #ffb3d9 !important;
+    --font-error-color: #ff6b9d !important;
+    --font-primary-color: #ffc9e3 !important;
+    --font-secondary-color: #e5a8c5 !important;
+    --font-link-color: #ffb3d9 !important;
+
+    /* === Buttons === */
+    --button-light-background-color: #ffc9e3 !important;
+    --button-light-font-color: #2d2232 !important;
+    --button-dark-background-color: #2d2232 !important;
+    --button-dark-font-color: #ffc9e3 !important;
+    --button-special-background-color: #ffb3d9 !important;
+    --button-special-font-color: #2d2232 !important;
+
+    /* Focus/active states */
+    --button-focused-box-shadow: 0 0 0 2px #ffb3d9 inset !important;
+    --button-disabled-opacity: 0.4 !important;
+    --button-active-opacity: 0.6 !important;
+
+    /* Primary buttons */
+    --button-primary-background-color: #ffb3d9 !important;
+    --button-primary-font-color: #2d2232 !important;
+    --button-primary-hover-font-color: rgba(45, 34, 50, 0.8) !important;
+    --button-primary-disabled-background-color: #e5a8c5 !important;
+    --button-primary-disabled-font-color: #3d2f42 !important;
+    --button-primary-selected-background-color: #ff99cc !important;
+    --button-primary-selected-font-color: #2d2232 !important;
+    --button-primary-selected-hover-font-color: rgba(45, 34, 50, 0.9) !important;
+    --button-primary-selected-active-font-color: #2d2232 !important;
+
+    /* Secondary buttons */
+    --button-secondary-background-color: #3d2f42 !important;
+    --button-secondary-font-color: #ffc9e3 !important;
+    --button-secondary-hover-font-color: rgba(255, 201, 227, 0.8) !important;
+    --button-secondary-selected-background-color: #3d2f42 !important;
+    --button-secondary-selected-font-color: #ffb3d9 !important;
+    --button-secondary-selected-hover-font-color: rgba(255, 179, 217, 0.8) !important;
+
+    /* Tertiary buttons */
+    --button-tertiary-background-color: #1f1825 !important;
+    --button-tertiary-font-color: #ffc9e3 !important;
+    --button-tertiary-selected-font-color: #ffb3d9 !important;
+
+    /* Links */
+    --link-standard-color: #ffb3d9 !important;
+    --link-standard-focus-box-shadow: 0 0 0 2px #ffb3d9 !important;
+    --link-standard-hover-color: #ffc9e3 !important;
+    --link-primary-color: #ffc9e3 !important;
+    --link-primary-focus-box-shadow: 0 0 0 2px #ffb3d9 !important;
+    --link-secondary-color: #e5a8c5 !important;
+
+    /* Inputs */
+    --input-default-background-color: #1f1825 !important;
+    --input-default-font-color: #ffc9e3 !important;
+    --input-placeholder-font-color: #8a6b7a !important;
+    --input-focused-border-color: #ffb3d9 !important;
+
+    /* Toggles */
+    --toggle-focused-box-shadow: 0 0 0 2px #ffb3d9 !important;
+    --toggle-on-body-color: #ffb3d9 !important;
+    --toggle-on-handle-color: #2d2232 !important;
+    --toggle-off-body-color: #6b4d5e !important;
+    --toggle-off-handle-color: #e5a8c5 !important;
+}
+
+.playbackSoundBadge__showQueue,
+.creatorSubscriptionsButton,
+.sidebarModule__webiEmbeddedModule,
+.spotlightUpsellBanner__background,
+.sidebarContent {
+    display: none !important;
+}
+
+.header__logoLink {
+    background-size: contain !important;
+}
+
+.header {
+    background: rgba(31, 24, 37, 0.5) !important; /* semi-transparent soft dark */
+    backdrop-filter: blur(15px) !important; /* applies blur to background */
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 20px !important; /* softer rounded edges */
+    border: 1px solid rgba(255, 179, 217, 0.2) !important; /* soft pink border */
+    box-shadow: 0 4px 20px rgba(255, 179, 217, 0.15) !important; /* soft glow */
+}
+
+.playControls__inner {
+    background: rgba(31, 24, 37, 0.5) !important; /* semi-transparent soft dark */
+    backdrop-filter: blur(15px) !important; /* applies blur to background */
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 179, 217, 0.2) !important; /* soft pink border */
+    box-shadow: 0 4px 20px rgba(255, 179, 217, 0.15) !important; /* soft glow */
+}
+
+.sc-button.sc-button-secondary,
+.sc-button.sc-button-secondary:visited {
+    background: rgba(61, 47, 66, 0.6) !important; /* semi-transparent background */
+    backdrop-filter: blur(10px); /* blur behind */
+    -webkit-backdrop-filter: blur(10px);
+    color: #ffc9e3 !important; /* soft pink text */
+    border: 2px solid rgba(255, 179, 217, 0.4); /* soft pink border */
+    border-radius: 15px; /* rounded corners */
+    padding: 6px 18px; /* spacing */
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(255, 179, 217, 0.2); /* subtle glow */
+}
+
+/* Hover effect */
+.sc-button.sc-button-secondary:hover {
+    background: rgba(255, 179, 217, 0.25) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 179, 217, 0.3) !important; /* enhanced glow */
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --special-color: #ffb3d9;
+    --special-rgb: 255, 179, 217;
+    --success-color: #c9a6d8;
+    --success-rgb: 201, 166, 216;
+    --error-color: #ff6b9d;
+    --error-rgb: 255, 107, 157;
+    --white-color: #ffe6f2;
+    --white-rgb: 255, 230, 242;
+    --black-color: #1f1825;
+    --black-rgb: 31, 24, 37;
+    --goPlus-color: linear-gradient(135deg, #ffb3d9, #ffa8d4);
+    --facebook-color: #ffb3d9;
+    --facebook-rgb: 255, 179, 217;
+    --twitter-color: #ffb3d9;
+    --twitter-rgb: 255, 179, 217;
+    --pinterest-color: #ffa8d4;
+    --pinterest-rgb: 255, 168, 212;
+    --tumblr-color: #3d2f42;
+    --tumblr-rgb: 61, 47, 66;
+    --transparent-color: transparent;
+    --success-surface-color: #f2d5f5;
+    --success-surface-rgb: 242, 213, 245;
+    --warning-surface-color: #ffe0e6;
+    --warning-surface-rgb: 255, 224, 230;
+    --error-surface-color: #ffc4d6;
+    --error-surface-rgb: 255, 196, 214;
+    --background-light-color: #ffe6f2;
+    --background-dark-color: #1f1825;
+    --input-default-border-color: transparent;
+    --input-placeholder-border-color: transparent;
+    --input-invalid-border-color: #ff6b9d;
+    --input-invalid-font-color: #ff6b9d;
+    --input-disabled-border-color: transparent;
+    --checkbox-default-background-color: transparent;
+    --checkbox-default-border-color: #8a6b7a;
+    --checkbox-checked-background-color: #ffb3d9;
+    --checkbox-checked-border-color: #ffb3d9;
+    --typography-root-font-size: 1.075em;
+    --typography-display3-font-size: 3.2857142857142856rem;
+    --typography-display3-font-weight: 500;
+    --typography-display3-line-height: 2.5714285714285716rem;
+    --typography-display3-letter-spacing: -0.04em;
+    --typography-display3-font: 500 2.2857142857142856rem/2.5714285714285716rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-display2-font-size: 2.857142857142857rem;
+    --typography-display2-font-weight: 500;
+    --typography-display2-line-height: 2.5714285714285716rem;
+    --typography-display2-letter-spacing: -0.03em;
+    --typography-display2-font: 500 2.857142857142857rem/2.5714285714285716rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-display1-font-size: 4.285714285714286rem;
+    --typography-display1-font-weight: 500;
+    --typography-display1-line-height: 2.5714285714285716rem;
+    --typography-display1-letter-spacing: -0.02em;
+    --typography-display1-font: 500 4.285714285714286rem/2.5714285714285716rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 500;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading1-font: 500 2rem/2.5714285714285716rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 500;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading2-font: 500 1.5714285714285714rem/2rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 500;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading3-font: 500 1.2142857142857142rem/1.7142857142857142rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 500;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-heading4-font: 500 1rem/1.4285714285714286rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 400;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-body-font: 400 1rem/1.4285714285714286rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-body1-font-size: 1.2142857142857142rem;
+    --typography-body1-font-weight: 400;
+    --typography-body1-line-height: 1.7142857142857142rem;
+    --typography-body1-font: 400 1.2142857142857142rem/1.7142857142857142rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-body2-font-size: 1rem !important;
+    --typography-body2-font-weight: 400;
+    --typography-body2-line-height: 1.4285714285714286rem;
+    --typography-body2-font: 400 1rem/1.4285714285714286rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 500;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-heading5-font: 500 0.8571428571428571rem/1.1428571428571428rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 400;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-captions-font: 400 0.8571428571428571rem/1.1428571428571428rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-heading6-font-size: 0.7142857142857143rem;
+    --typography-heading6-font-weight: 500;
+    --typography-heading6-letter-spacing: 0.1em;
+    --typography-heading6-line-height: 1.1428571428571428rem;
+    --typography-heading6-text-transform: lowercase;
+    --typography-heading6-font: 500 0.7142857142857143rem/1.1428571428571428rem 'Quicksand', 'Comfortaa', sans-serif;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 500;
+    --typography-micro-letter-spacing: 0.07142857142857142rem;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: lowercase;
+    --typography-micro-font: 500 0.7142857142857143rem/1.1428571428571428rem 'Quicksand', 'Comfortaa', sans-serif;
+    --spacing-0_25x: 2px;
+    --spacing-0_5x: 4px;
+    --spacing-0_75x: 6px;
+    --spacing-1x: 8px;
+    --spacing-1_25x: 10px;
+    --spacing-1_5x: 12px;
+    --spacing-1_75x: 14px;
+    --spacing-2x: 16px;
+    --spacing-2_5x: 20px;
+    --spacing-3x: 24px;
+    --spacing-3_5x: 28px;
+    --spacing-4x: 32px;
+    --spacing-5x: 40px;
+    --spacing-6x: 48px;
+    --spacing-7x: 56px;
+    --spacing-8x: 64px;
+    --artwork-1x-size: 8px;
+    --artwork-2x-size: 16px;
+    --artwork-3x-size: 24px;
+    --artwork-4x-size: 32px;
+    --artwork-5x-size: 40px;
+    --artwork-6x-size: 48px;
+    --artwork-8x-size: 64px;
+    --artwork-13x-size: 104px;
+    --artwork-15x-size: 120px;
+    --artwork-16x-size: 128px;
+    --artwork-18x-size: 144px;
+    --artwork-20x-size: 160px;
+    --artwork-25x-size: 200px;
+    --artwork-29x-size: 232px;
+    --artwork-40x-size: 320px;
+    --artwork-42x-size: 336px;
+    --artwork-45x-size: 360px;
+    --artwork-64x-size: 512px;
+    --breakpoints-xs: 480;
+    --breakpoints-sm: 768;
+    --breakpoints-md: 1152;
+    --breakpoints-lg: 1440;
+    --breakpoints-xl: 1920;
+    --borderRadiuses-4: 4px;
+    --borderRadiuses-8: 8px;
+    --borderRadiuses-10: 10px;
+    --borderRadiuses-16: 16px;
+    --borderRadiuses-20: 20px;
+    --borderRadiuses-50: 50px;
+    --borderRadiuses-100: 100px;
+}
+
+/* Soft dreamy aesthetic with gentle glow */
+body {
+    letter-spacing: 0.02em;
+}
