@@ -25,5 +25,5 @@ This repository is themes for "<a href="https://github.com/richardhbtz/soundclou
   <br>
   <img src="https://github.com/mapadah/soundcloud-rpc-themes/blob/main/previews/purplerelax.png?raw=true" width="600">
   <br><br>
-  Download: <a href="https://raw.githubusercontent.com/mapadah/soundcloud-rpc-themes/main/themes/purplerelax.css">download fallinreverse.css</a>
+  Download: <a href="https://raw.githubusercontent.com/mapadah/soundcloud-rpc-themes/main/themes/purplerelax.css?download=1">download fallinreverse.css</a>
 </details>
