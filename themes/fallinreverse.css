@@ -1,0 +1,381 @@
+/**
+ * @name Falling in Reverse
+ * @author fork
+ * @version 1.0.0
+ * @description Theme inspired by Falling in Reverse - bold, rebellious, and intense
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Teko:wght@300;400;500;600;700&family=Anton&display=swap');
+
+body {
+    font-family: 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', 'Teko', 'Anton', sans-serif !important;
+}
+
+.theme-dark {
+    /* === Core surfaces === */
+    --surface-color: #0d0d0d !important;
+    --surface-rgb: 13, 13, 13 !important;
+    --primary-color: #ffffff !important;
+    --primary-rgb: 255, 255, 255 !important;
+    --secondary-color: #cccccc !important;
+    --secondary-rgb: 204, 204, 204 !important;
+    --highlight-color: #1a1a1a !important;
+    --highlight-rgb: 26, 26, 26 !important;
+    --link-color: #ff0000 !important;
+    --link-rgb: 255, 0, 0 !important;
+    --overlay-color: hsla(0, 0%, 0%, 0.4) !important;
+    --overlay-rgb: 0, 0, 0, 0.4 !important;
+    --imageBorder-color: hsla(0, 100%, 50%, 0.3) !important;
+    --imageBorder-rgb: 255, 0, 0, 0.3 !important;
+
+    /* === Accent usage === */
+    --artist-color: #ff0000 !important;
+    --artist-rgb: 255, 0, 0 !important;
+    --artist-pro-color: #ffffff !important;
+    --artist-pro-rgb: 255, 255, 255 !important;
+    --artist-surface-color: #cc0000 !important;
+    --artist-surface-rgb: 204, 0, 0 !important;
+    --artist-pro-surface-color: #e6e6e6 !important;
+    --artist-pro-surface-rgb: 230, 230, 230 !important;
+
+    /* === Support colors === */
+    --support-bg-color: #ff0000 !important;
+    --support-bg-rgb: 255, 0, 0 !important;
+    --support-text-color: #ffffff !important;
+    --support-text-rgb: 255, 255, 255 !important;
+    --support-hover-bg-color: #ff3333 !important;
+    --support-hover-bg-rgb: 255, 51, 51 !important;
+    --support-hover-text-color: #ffffff !important;
+    --support-hover-text-rgb: 255, 255, 255 !important;
+
+    /* === Background layers === */
+    --background-surface-color: #000000 !important;
+    --background-highlight-color: #1a1a1a !important;
+
+    /* === Fonts === */
+    --font-sans-serif-family: 'Bebas Neue', 'Teko', 'Anton', sans-serif !important;
+    --font-monospace-family: 'Bebas Neue', 'Teko', 'Anton', sans-serif !important;
+    --font-light-color: #ffffff !important;
+    --font-dark-color: #000000 !important;
+    --font-special-color: #ff0000 !important;
+    --font-error-color: #ff0000 !important;
+    --font-primary-color: #ffffff !important;
+    --font-secondary-color: #cccccc !important;
+    --font-link-color: #ff0000 !important;
+
+    /* === Buttons === */
+    --button-light-background-color: #ffffff !important;
+    --button-light-font-color: #000000 !important;
+    --button-dark-background-color: #000000 !important;
+    --button-dark-font-color: #ffffff !important;
+    --button-special-background-color: #ff0000 !important;
+    --button-special-font-color: #ffffff !important;
+
+    /* Focus/active states */
+    --button-focused-box-shadow: 0 0 0 2px #ff0000 inset !important;
+    --button-disabled-opacity: 0.4 !important;
+    --button-active-opacity: 0.6 !important;
+
+    /* Primary buttons */
+    --button-primary-background-color: #ff0000 !important;
+    --button-primary-font-color: #ffffff !important;
+    --button-primary-hover-font-color: rgba(255, 255, 255, 0.9) !important;
+    --button-primary-disabled-background-color: #990000 !important;
+    --button-primary-disabled-font-color: #666666 !important;
+    --button-primary-selected-background-color: #cc0000 !important;
+    --button-primary-selected-font-color: #ffffff !important;
+    --button-primary-selected-hover-font-color: rgba(255, 255, 255, 0.95) !important;
+    --button-primary-selected-active-font-color: #ffffff !important;
+
+    /* Secondary buttons */
+    --button-secondary-background-color: #1a1a1a !important;
+    --button-secondary-font-color: #ffffff !important;
+    --button-secondary-hover-font-color: rgba(255, 255, 255, 0.8) !important;
+    --button-secondary-selected-background-color: #1a1a1a !important;
+    --button-secondary-selected-font-color: #ff0000 !important;
+    --button-secondary-selected-hover-font-color: rgba(255, 0, 0, 0.8) !important;
+
+    /* Tertiary buttons */
+    --button-tertiary-background-color: #000000 !important;
+    --button-tertiary-font-color: #ffffff !important;
+    --button-tertiary-selected-font-color: #ff0000 !important;
+
+    /* Links */
+    --link-standard-color: #ff0000 !important;
+    --link-standard-focus-box-shadow: 0 0 0 2px #ff0000 !important;
+    --link-standard-hover-color: #ff3333 !important;
+    --link-primary-color: #ffffff !important;
+    --link-primary-focus-box-shadow: 0 0 0 2px #ff0000 !important;
+    --link-secondary-color: #cccccc !important;
+
+    /* Inputs */
+    --input-default-background-color: #000000 !important;
+    --input-default-font-color: #ffffff !important;
+    --input-placeholder-font-color: #666666 !important;
+    --input-focused-border-color: #ff0000 !important;
+
+    /* Toggles */
+    --toggle-focused-box-shadow: 0 0 0 2px #ff0000 !important;
+    --toggle-on-body-color: #ff0000 !important;
+    --toggle-on-handle-color: #ffffff !important;
+    --toggle-off-body-color: #333333 !important;
+    --toggle-off-handle-color: #999999 !important;
+}
+
+.playbackSoundBadge__showQueue,
+.creatorSubscriptionsButton,
+.sidebarModule__webiEmbeddedModule,
+.spotlightUpsellBanner__background,
+.sidebarContent {
+    display: none !important;
+}
+
+.header__logoLink {
+    background-size: contain !important;
+}
+
+.header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(26, 0, 0, 0.95) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 0px !important; /* sharp edges */
+    border-bottom: 3px solid #ff0000 !important; /* bold red line */
+    box-shadow: 0 5px 30px rgba(255, 0, 0, 0.4) !important; /* intense red glow */
+}
+
+.playControls__inner {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(26, 0, 0, 0.95) 100%) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 0px !important;
+    border-top: 3px solid #ff0000 !important; /* bold red line */
+    box-shadow: 0 -5px 30px rgba(255, 0, 0, 0.4) !important; /* intense red glow */
+}
+
+.sc-button.sc-button-secondary,
+.sc-button.sc-button-secondary:visited {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: #ffffff !important;
+    border: 2px solid #ff0000;
+    border-radius: 0px; /* sharp edges - no compromise */
+    padding: 8px 20px;
+    transition:
+        all 0.3s ease,
+        transform 0.15s ease;
+    box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.3),
+        inset 0 0 10px rgba(255, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+
+/* Hover effect */
+.sc-button.sc-button-secondary:hover {
+    background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%) !important;
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 20px rgba(255, 0, 0, 0.6),
+        inset 0 0 15px rgba(0, 0, 0, 0.3) !important;
+    border-color: #ffffff;
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --special-color: #ff0000;
+    --special-rgb: 255, 0, 0;
+    --success-color: #ff0000;
+    --success-rgb: 255, 0, 0;
+    --error-color: #ff0000;
+    --error-rgb: 255, 0, 0;
+    --white-color: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --black-color: #000000;
+    --black-rgb: 0, 0, 0;
+    --goPlus-color: linear-gradient(135deg, #ff0000, #ffffff);
+    --facebook-color: #ff0000;
+    --facebook-rgb: 255, 0, 0;
+    --twitter-color: #ff0000;
+    --twitter-rgb: 255, 0, 0;
+    --pinterest-color: #ff0000;
+    --pinterest-rgb: 255, 0, 0;
+    --tumblr-color: #1a1a1a;
+    --tumblr-rgb: 26, 26, 26;
+    --transparent-color: transparent;
+    --success-surface-color: #330000;
+    --success-surface-rgb: 51, 0, 0;
+    --warning-surface-color: #330000;
+    --warning-surface-rgb: 51, 0, 0;
+    --error-surface-color: #330000;
+    --error-surface-rgb: 51, 0, 0;
+    --background-light-color: #ffffff;
+    --background-dark-color: #000000;
+    --input-default-border-color: transparent;
+    --input-placeholder-border-color: transparent;
+    --input-invalid-border-color: #ff0000;
+    --input-invalid-font-color: #ff0000;
+    --input-disabled-border-color: transparent;
+    --checkbox-default-background-color: transparent;
+    --checkbox-default-border-color: #666666;
+    --checkbox-checked-background-color: #ff0000;
+    --checkbox-checked-border-color: #ff0000;
+    --typography-root-font-size: 1.075em;
+    --typography-display3-font-size: 3.2857142857142856rem;
+    --typography-display3-font-weight: 700;
+    --typography-display3-line-height: 2.5714285714285716rem;
+    --typography-display3-letter-spacing: 0.05em;
+    --typography-display3-font: 700 2.2857142857142856rem/2.5714285714285716rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-display2-font-size: 2.857142857142857rem;
+    --typography-display2-font-weight: 700;
+    --typography-display2-line-height: 2.5714285714285716rem;
+    --typography-display2-letter-spacing: 0.05em;
+    --typography-display2-font: 700 2.857142857142857rem/2.5714285714285716rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-display1-font-size: 4.285714285714286rem;
+    --typography-display1-font-weight: 700;
+    --typography-display1-line-height: 2.5714285714285716rem;
+    --typography-display1-letter-spacing: 0.05em;
+    --typography-display1-font: 700 4.285714285714286rem/2.5714285714285716rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 700;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading1-font: 700 2rem/2.5714285714285716rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 700;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading2-font: 700 1.5714285714285714rem/2rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 700;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading3-font: 700 1.2142857142857142rem/1.7142857142857142rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 700;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-heading4-font: 700 1rem/1.4285714285714286rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 400;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-body-font: 400 1rem/1.4285714285714286rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-body1-font-size: 1.2142857142857142rem;
+    --typography-body1-font-weight: 400;
+    --typography-body1-line-height: 1.7142857142857142rem;
+    --typography-body1-font: 400 1.2142857142857142rem/1.7142857142857142rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-body2-font-size: 1rem !important;
+    --typography-body2-font-weight: 400;
+    --typography-body2-line-height: 1.4285714285714286rem;
+    --typography-body2-font: 400 1rem/1.4285714285714286rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 700;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-heading5-font: 700 0.8571428571428571rem/1.1428571428571428rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 400;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-captions-font: 400 0.8571428571428571rem/1.1428571428571428rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-heading6-font-size: 0.7142857142857143rem;
+    --typography-heading6-font-weight: 700;
+    --typography-heading6-letter-spacing: 0.15em;
+    --typography-heading6-line-height: 1.1428571428571428rem;
+    --typography-heading6-text-transform: uppercase;
+    --typography-heading6-font: 700 0.7142857142857143rem/1.1428571428571428rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 700;
+    --typography-micro-letter-spacing: 0.15em;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: uppercase;
+    --typography-micro-font: 700 0.7142857142857143rem/1.1428571428571428rem 'Bebas Neue', 'Teko', 'Anton', sans-serif;
+    --spacing-0_25x: 2px;
+    --spacing-0_5x: 4px;
+    --spacing-0_75x: 6px;
+    --spacing-1x: 8px;
+    --spacing-1_25x: 10px;
+    --spacing-1_5x: 12px;
+    --spacing-1_75x: 14px;
+    --spacing-2x: 16px;
+    --spacing-2_5x: 20px;
+    --spacing-3x: 24px;
+    --spacing-3_5x: 28px;
+    --spacing-4x: 32px;
+    --spacing-5x: 40px;
+    --spacing-6x: 48px;
+    --spacing-7x: 56px;
+    --spacing-8x: 64px;
+    --artwork-1x-size: 8px;
+    --artwork-2x-size: 16px;
+    --artwork-3x-size: 24px;
+    --artwork-4x-size: 32px;
+    --artwork-5x-size: 40px;
+    --artwork-6x-size: 48px;
+    --artwork-8x-size: 64px;
+    --artwork-13x-size: 104px;
+    --artwork-15x-size: 120px;
+    --artwork-16x-size: 128px;
+    --artwork-18x-size: 144px;
+    --artwork-20x-size: 160px;
+    --artwork-25x-size: 200px;
+    --artwork-29x-size: 232px;
+    --artwork-40x-size: 320px;
+    --artwork-42x-size: 336px;
+    --artwork-45x-size: 360px;
+    --artwork-64x-size: 512px;
+    --breakpoints-xs: 480;
+    --breakpoints-sm: 768;
+    --breakpoints-md: 1152;
+    --breakpoints-lg: 1440;
+    --breakpoints-xl: 1920;
+    --borderRadiuses-4: 0px;
+    --borderRadiuses-8: 0px;
+    --borderRadiuses-10: 0px;
+    --borderRadiuses-16: 0px;
+    --borderRadiuses-20: 0px;
+    --borderRadiuses-50: 0px;
+    --borderRadiuses-100: 0px;
+}
+
+/* Bold, unapologetic styling */
+body {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+/* Intense red glow effect */
+* {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Dramatic lighting effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at center,
+        rgba(255, 0, 0, 0.05) 0%,
+        rgba(0, 0, 0, 0) 50%
+    );
+    pointer-events: none;
+    z-index: 0;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
