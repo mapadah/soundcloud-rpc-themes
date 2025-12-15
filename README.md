@@ -6,5 +6,5 @@ This repository is themes for "<a href="https://github.com/richardhbtz/soundclou
   <img src="https://github.com/mapadah/soundcloud-rpc-themes/blob/main/previews/fallinreverse.png?raw=true" width="600">
   <br><br>
   ⬇️ **Download:**  
-  [Download fallinreverse.css](https://raw.githubusercontent.com/mapadah/soundcloud-rpc-themes/main/themes/fallinreverse.css)
+  <a href="https://raw.githubusercontent.com/mapadah/soundcloud-rpc-themes/main/themes/fallinreverse.css">download fallinreverse.css</a>
 </details>
