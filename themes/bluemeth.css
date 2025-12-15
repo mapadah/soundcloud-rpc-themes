@@ -1,0 +1,478 @@
+/**
+ * @name Victory Royale
+ * @author Modified from Gruvbox
+ * @version 1.0.0
+ * @description Fortnite theme - Battle Royale energy ⚡🎮
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Burbank+Big+Condensed:wght@700&family=Bungee&family=Black+Ops+One&display=swap');
+
+body {
+    font-family: 'Bungee', 'Black Ops One', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bungee', 'Black Ops One', sans-serif !important;
+}
+
+.theme-dark {
+    /* === Core surfaces === */
+    --surface-color: #1a1f2e !important;
+    --surface-rgb: 26, 31, 46 !important;
+    --primary-color: #00d9ff !important;
+    --primary-rgb: 0, 217, 255 !important;
+    --secondary-color: #8ab4f8 !important;
+    --secondary-rgb: 138, 180, 248 !important;
+    --highlight-color: #2d3446 !important;
+    --highlight-rgb: 45, 52, 70 !important;
+    --link-color: #00d9ff !important;
+    --link-rgb: 0, 217, 255 !important;
+    --overlay-color: hsla(220, 30%, 15%, 0.5) !important;
+    --overlay-rgb: 26, 31, 46, 0.5 !important;
+    --imageBorder-color: hsla(190, 100%, 50%, 0.4) !important;
+    --imageBorder-rgb: 0, 217, 255, 0.4 !important;
+
+    /* === Accent usage === */
+    --artist-color: #00d9ff !important;
+    --artist-rgb: 0, 217, 255 !important;
+    --artist-pro-color: #ff3864 !important;
+    --artist-pro-rgb: 255, 56, 100 !important;
+    --artist-surface-color: #00b8e6 !important;
+    --artist-surface-rgb: 0, 184, 230 !important;
+    --artist-pro-surface-color: #e62f57 !important;
+    --artist-pro-surface-rgb: 230, 47, 87 !important;
+
+    /* === Support colors === */
+    --support-bg-color: #00d9ff !important;
+    --support-bg-rgb: 0, 217, 255 !important;
+    --support-text-color: #0a0e17 !important;
+    --support-text-rgb: 10, 14, 23 !important;
+    --support-hover-bg-color: #33e2ff !important;
+    --support-hover-bg-rgb: 51, 226, 255 !important;
+    --support-hover-text-color: #0a0e17 !important;
+    --support-hover-text-rgb: 10, 14, 23 !important;
+
+    /* === Background layers === */
+    --background-surface-color: #0a0e17 !important;
+    --background-highlight-color: #2d3446 !important;
+
+    /* === Fonts === */
+    --font-sans-serif-family: 'Bungee', 'Black Ops One', sans-serif !important;
+    --font-monospace-family: 'Bungee', 'Black Ops One', sans-serif !important;
+    --font-light-color: #ffffff !important;
+    --font-dark-color: #0a0e17 !important;
+    --font-special-color: #00d9ff !important;
+    --font-error-color: #ff3864 !important;
+    --font-primary-color: #00d9ff !important;
+    --font-secondary-color: #8ab4f8 !important;
+    --font-link-color: #00d9ff !important;
+
+    /* === Buttons === */
+    --button-light-background-color: #00d9ff !important;
+    --button-light-font-color: #0a0e17 !important;
+    --button-dark-background-color: #0a0e17 !important;
+    --button-dark-font-color: #00d9ff !important;
+    --button-special-background-color: #00d9ff !important;
+    --button-special-font-color: #0a0e17 !important;
+
+    /* Focus/active states */
+    --button-focused-box-shadow: 0 0 0 2px #00d9ff inset !important;
+    --button-disabled-opacity: 0.4 !important;
+    --button-active-opacity: 0.6 !important;
+
+    /* Primary buttons */
+    --button-primary-background-color: #00d9ff !important;
+    --button-primary-font-color: #0a0e17 !important;
+    --button-primary-hover-font-color: rgba(10, 14, 23, 0.8) !important;
+    --button-primary-disabled-background-color: #007a99 !important;
+    --button-primary-disabled-font-color: #4a5168 !important;
+    --button-primary-selected-background-color: #00b8e6 !important;
+    --button-primary-selected-font-color: #0a0e17 !important;
+    --button-primary-selected-hover-font-color: rgba(10, 14, 23, 0.9) !important;
+    --button-primary-selected-active-font-color: #0a0e17 !important;
+
+    /* Secondary buttons */
+    --button-secondary-background-color: #2d3446 !important;
+    --button-secondary-font-color: #00d9ff !important;
+    --button-secondary-hover-font-color: rgba(0, 217, 255, 0.8) !important;
+    --button-secondary-selected-background-color: #2d3446 !important;
+    --button-secondary-selected-font-color: #00d9ff !important;
+    --button-secondary-selected-hover-font-color: rgba(0, 217, 255, 0.8) !important;
+
+    /* Tertiary buttons */
+    --button-tertiary-background-color: #0a0e17 !important;
+    --button-tertiary-font-color: #00d9ff !important;
+    --button-tertiary-selected-font-color: #00d9ff !important;
+
+    /* Links */
+    --link-standard-color: #00d9ff !important;
+    --link-standard-focus-box-shadow: 0 0 0 2px #00d9ff !important;
+    --link-standard-hover-color: #33e2ff !important;
+    --link-primary-color: #00d9ff !important;
+    --link-primary-focus-box-shadow: 0 0 0 2px #00d9ff !important;
+    --link-secondary-color: #8ab4f8 !important;
+
+    /* Inputs */
+    --input-default-background-color: #0a0e17 !important;
+    --input-default-font-color: #00d9ff !important;
+    --input-placeholder-font-color: #5a6478 !important;
+    --input-focused-border-color: #00d9ff !important;
+
+    /* Toggles */
+    --toggle-focused-box-shadow: 0 0 0 2px #00d9ff !important;
+    --toggle-on-body-color: #00d9ff !important;
+    --toggle-on-handle-color: #0a0e17 !important;
+    --toggle-off-body-color: #4a5168 !important;
+    --toggle-off-handle-color: #8ab4f8 !important;
+}
+
+.playbackSoundBadge__showQueue,
+.creatorSubscriptionsButton,
+.sidebarModule__webiEmbeddedModule,
+.spotlightUpsellBanner__background,
+.sidebarContent {
+    display: none !important;
+}
+
+.header__logoLink {
+    background-size: contain !important;
+}
+
+.header {
+    background: 
+        linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(0, 184, 230, 0.15) 100%),
+        rgba(10, 14, 23, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 12px !important;
+    border: 3px solid #00d9ff !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 217, 255, 0.5),
+        0 0 80px rgba(0, 217, 255, 0.4),
+        inset 0 2px 8px rgba(0, 217, 255, 0.3) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Iconic Fortnite blue glow */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle at center,
+        rgba(0, 217, 255, 0.15) 0%,
+        transparent 70%
+    );
+    animation: blueGlowPulse 3s ease-in-out infinite;
+}
+
+@keyframes blueGlowPulse {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 1;
+    }
+}
+
+.playControls__inner {
+    background: 
+        linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(0, 184, 230, 0.15) 100%),
+        rgba(10, 14, 23, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 12px !important;
+    border: 3px solid #00d9ff !important;
+    box-shadow: 
+        0 -8px 32px rgba(0, 217, 255, 0.5),
+        0 0 80px rgba(0, 217, 255, 0.4),
+        inset 0 -2px 8px rgba(0, 217, 255, 0.3) !important;
+}
+
+.sc-button.sc-button-secondary,
+.sc-button.sc-button-secondary:visited {
+    background: 
+        linear-gradient(135deg, #2d3446 0%, #1a1f2e 100%) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #00d9ff !important;
+    border: 3px solid #00d9ff;
+    border-radius: 8px;
+    padding: 12px 28px;
+    transition:
+        all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        transform 0.15s ease;
+    box-shadow: 
+        0 4px 20px rgba(0, 217, 255, 0.4),
+        0 2px 8px rgba(0, 0, 0, 0.4),
+        inset 0 2px 6px rgba(0, 217, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+
+/* Fortnite blue shimmer effect */
+.sc-button.sc-button-secondary::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent 30%,
+        rgba(0, 217, 255, 0.5) 50%,
+        transparent 70%
+    );
+    transform: translateX(-100%);
+    transition: transform 0.6s ease;
+}
+
+.sc-button.sc-button-secondary:hover::before {
+    transform: translateX(100%);
+}
+
+/* Hover effect */
+.sc-button.sc-button-secondary:hover {
+    background: 
+        linear-gradient(135deg, rgba(0, 217, 255, 0.4) 0%, rgba(0, 184, 230, 0.3) 100%) !important;
+    border-color: #33e2ff;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 
+        0 8px 30px rgba(0, 217, 255, 0.6),
+        0 4px 20px rgba(0, 217, 255, 0.5),
+        inset 0 2px 8px rgba(0, 217, 255, 0.3) !important;
+}
+
+.sc-button.sc-button-secondary:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --special-color: #00d9ff;
+    --special-rgb: 0, 217, 255;
+    --success-color: #00ff00;
+    --success-rgb: 0, 255, 0;
+    --error-color: #ff3864;
+    --error-rgb: 255, 56, 100;
+    --white-color: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --black-color: #0a0e17;
+    --black-rgb: 10, 14, 23;
+    --goPlus-color: linear-gradient(135deg, #00d9ff, #8ab4f8, #00b8e6);
+    --facebook-color: #00d9ff;
+    --facebook-rgb: 0, 217, 255;
+    --twitter-color: #00d9ff;
+    --twitter-rgb: 0, 217, 255;
+    --pinterest-color: #ff3864;
+    --pinterest-rgb: 255, 56, 100;
+    --tumblr-color: #2d3446;
+    --tumblr-rgb: 45, 52, 70;
+    --transparent-color: transparent;
+    --success-surface-color: #003d00;
+    --success-surface-rgb: 0, 61, 0;
+    --warning-surface-color: #004a5a;
+    --warning-surface-rgb: 0, 74, 90;
+    --error-surface-color: #4d001a;
+    --error-surface-rgb: 77, 0, 26;
+    --background-light-color: #ffffff;
+    --background-dark-color: #0a0e17;
+    --input-default-border-color: transparent;
+    --input-placeholder-border-color: transparent;
+    --input-invalid-border-color: #ff3864;
+    --input-invalid-font-color: #ff3864;
+    --input-disabled-border-color: transparent;
+    --checkbox-default-background-color: transparent;
+    --checkbox-default-border-color: #5a6478;
+    --checkbox-checked-background-color: #00d9ff;
+    --checkbox-checked-border-color: #00d9ff;
+    --typography-root-font-size: 1.075em;
+    --typography-display3-font-size: 3.2857142857142856rem;
+    --typography-display3-font-weight: 900;
+    --typography-display3-line-height: 2.5714285714285716rem;
+    --typography-display3-letter-spacing: 0.05em;
+    --typography-display3-font: 900 2.2857142857142856rem/2.5714285714285716rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-display2-font-size: 2.857142857142857rem;
+    --typography-display2-font-weight: 900;
+    --typography-display2-line-height: 2.5714285714285716rem;
+    --typography-display2-letter-spacing: 0.05em;
+    --typography-display2-font: 900 2.857142857142857rem/2.5714285714285716rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-display1-font-size: 4.285714285714286rem;
+    --typography-display1-font-weight: 900;
+    --typography-display1-line-height: 2.5714285714285716rem;
+    --typography-display1-letter-spacing: 0.05em;
+    --typography-display1-font: 900 4.285714285714286rem/2.5714285714285716rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 900;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading1-font: 900 2rem/2.5714285714285716rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 700;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading2-font: 700 1.5714285714285714rem/2rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 700;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading3-font: 700 1.2142857142857142rem/1.7142857142857142rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 700;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-heading4-font: 700 1rem/1.4285714285714286rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 700;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-body-font: 700 1rem/1.4285714285714286rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-body1-font-size: 1.2142857142857142rem;
+    --typography-body1-font-weight: 700;
+    --typography-body1-line-height: 1.7142857142857142rem;
+    --typography-body1-font: 700 1.2142857142857142rem/1.7142857142857142rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-body2-font-size: 1rem !important;
+    --typography-body2-font-weight: 700;
+    --typography-body2-line-height: 1.4285714285714286rem;
+    --typography-body2-font: 700 1rem/1.4285714285714286rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 700;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-heading5-font: 700 0.8571428571428571rem/1.1428571428571428rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 700;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-captions-font: 700 0.8571428571428571rem/1.1428571428571428rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-heading6-font-size: 0.7142857142857143rem;
+    --typography-heading6-font-weight: 900;
+    --typography-heading6-letter-spacing: 0.15em;
+    --typography-heading6-line-height: 1.1428571428571428rem;
+    --typography-heading6-text-transform: uppercase;
+    --typography-heading6-font: 900 0.7142857142857143rem/1.1428571428571428rem 'Bungee', 'Black Ops One', sans-serif;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 900;
+    --typography-micro-letter-spacing: 0.15em;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: uppercase;
+    --typography-micro-font: 900 0.7142857142857143rem/1.1428571428571428rem 'Bungee', 'Black Ops One', sans-serif;
+    --spacing-0_25x: 2px;
+    --spacing-0_5x: 4px;
+    --spacing-0_75x: 6px;
+    --spacing-1x: 8px;
+    --spacing-1_25x: 10px;
+    --spacing-1_5x: 12px;
+    --spacing-1_75x: 14px;
+    --spacing-2x: 16px;
+    --spacing-2_5x: 20px;
+    --spacing-3x: 24px;
+    --spacing-3_5x: 28px;
+    --spacing-4x: 32px;
+    --spacing-5x: 40px;
+    --spacing-6x: 48px;
+    --spacing-7x: 56px;
+    --spacing-8x: 64px;
+    --artwork-1x-size: 8px;
+    --artwork-2x-size: 16px;
+    --artwork-3x-size: 24px;
+    --artwork-4x-size: 32px;
+    --artwork-5x-size: 40px;
+    --artwork-6x-size: 48px;
+    --artwork-8x-size: 64px;
+    --artwork-13x-size: 104px;
+    --artwork-15x-size: 120px;
+    --artwork-16x-size: 128px;
+    --artwork-18x-size: 144px;
+    --artwork-20x-size: 160px;
+    --artwork-25x-size: 200px;
+    --artwork-29x-size: 232px;
+    --artwork-40x-size: 320px;
+    --artwork-42x-size: 336px;
+    --artwork-45x-size: 360px;
+    --artwork-64x-size: 512px;
+    --breakpoints-xs: 480;
+    --breakpoints-sm: 768;
+    --breakpoints-md: 1152;
+    --breakpoints-lg: 1440;
+    --breakpoints-xl: 1920;
+    --borderRadiuses-4: 6px;
+    --borderRadiuses-8: 8px;
+    --borderRadiuses-10: 10px;
+    --borderRadiuses-16: 12px;
+    --borderRadiuses-20: 16px;
+    --borderRadiuses-50: 50px;
+    --borderRadiuses-100: 100px;
+}
+
+/* Battle Royale energy */
+body {
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+/* Iconic Fortnite blue glow */
+* {
+    text-shadow: 
+        0 0 15px rgba(0, 217, 255, 0.7),
+        0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Fortnite blue energy background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(0, 217, 255, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(0, 184, 230, 0.06) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+    animation: blueEnergyPulse 8s ease-in-out infinite;
+}
+
+@keyframes blueEnergyPulse {
+    0%, 100% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Fortnite logo-style circle */
+body::after {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    border: 2px solid rgba(0, 217, 255, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    animation: brandingCircle 10s ease-in-out infinite;
+}
+
+@keyframes brandingCircle {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1) rotate(0deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(0.8) rotate(180deg);
+        opacity: 0.7;
+    }
+}
