@@ -31,6 +31,10 @@ This repository is themes for "<a href="https://github.com/richardhbtz/soundclou
   ### wingdings.css
   <br>
   <img src="https://github.com/mapadah/soundcloud-rpc-themes/blob/main/previews/wingdings.png" width="600">
+  
+  ### bluemeth.css
+  <br>
+  <img src="https://github.com/mapadah/soundcloud-rpc-themes/blob/main/previews/bluemeth.png" width="600">
 
   ### cyber.css
   <br>
