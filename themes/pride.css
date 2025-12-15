@@ -1,0 +1,490 @@
+/**
+ * @name Pride
+ * @author fork
+ * @version 1.0.0
+ * @description LGBTQ+ Pride theme - love is love 🏳️‍🌈
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Nunito', 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito', 'Poppins', sans-serif !important;
+}
+
+.theme-dark {
+    /* === Core surfaces === */
+    --surface-color: #1a1a2e !important;
+    --surface-rgb: 26, 26, 46 !important;
+    --primary-color: #f0f0f0 !important;
+    --primary-rgb: 240, 240, 240 !important;
+    --secondary-color: #c0c0d0 !important;
+    --secondary-rgb: 192, 192, 208 !important;
+    --highlight-color: #252541 !important;
+    --highlight-rgb: 37, 37, 65 !important;
+    --link-color: #ff6ec7 !important;
+    --link-rgb: 255, 110, 199 !important;
+    --overlay-color: hsla(240, 30%, 15%, 0.5) !important;
+    --overlay-rgb: 26, 26, 46, 0.5 !important;
+    --imageBorder-color: hsla(280, 80%, 60%, 0.3) !important;
+    --imageBorder-rgb: 255, 110, 199, 0.3 !important;
+
+    /* === Accent usage === */
+    --artist-color: #ff6ec7 !important;
+    --artist-rgb: 255, 110, 199 !important;
+    --artist-pro-color: #7c5cff !important;
+    --artist-pro-rgb: 124, 92, 255 !important;
+    --artist-surface-color: #ff3db8 !important;
+    --artist-surface-rgb: 255, 61, 184 !important;
+    --artist-pro-surface-color: #6347e8 !important;
+    --artist-pro-surface-rgb: 99, 71, 232 !important;
+
+    /* === Support colors === */
+    --support-bg-color: #ff6ec7 !important;
+    --support-bg-rgb: 255, 110, 199 !important;
+    --support-text-color: #1a1a2e !important;
+    --support-text-rgb: 26, 26, 46 !important;
+    --support-hover-bg-color: #ff8fd6 !important;
+    --support-hover-bg-rgb: 255, 143, 214 !important;
+    --support-hover-text-color: #1a1a2e !important;
+    --support-hover-text-rgb: 26, 26, 46 !important;
+
+    /* === Background layers === */
+    --background-surface-color: #0f0f1e !important;
+    --background-highlight-color: #252541 !important;
+
+    /* === Fonts === */
+    --font-sans-serif-family: 'Nunito', 'Poppins', sans-serif !important;
+    --font-monospace-family: 'Nunito', 'Poppins', sans-serif !important;
+    --font-light-color: #ffffff !important;
+    --font-dark-color: #0f0f1e !important;
+    --font-special-color: #ff6ec7 !important;
+    --font-error-color: #ff5555 !important;
+    --font-primary-color: #f0f0f0 !important;
+    --font-secondary-color: #c0c0d0 !important;
+    --font-link-color: #ff6ec7 !important;
+
+    /* === Buttons === */
+    --button-light-background-color: #f0f0f0 !important;
+    --button-light-font-color: #1a1a2e !important;
+    --button-dark-background-color: #1a1a2e !important;
+    --button-dark-font-color: #f0f0f0 !important;
+    --button-special-background-color: #ff6ec7 !important;
+    --button-special-font-color: #ffffff !important;
+
+    /* Focus/active states */
+    --button-focused-box-shadow: 0 0 0 2px #ff6ec7 inset !important;
+    --button-disabled-opacity: 0.4 !important;
+    --button-active-opacity: 0.6 !important;
+
+    /* Primary buttons */
+    --button-primary-background-color: #ff6ec7 !important;
+    --button-primary-font-color: #ffffff !important;
+    --button-primary-hover-font-color: rgba(255, 255, 255, 0.9) !important;
+    --button-primary-disabled-background-color: #b34d8a !important;
+    --button-primary-disabled-font-color: #6a6a7a !important;
+    --button-primary-selected-background-color: #e55bb5 !important;
+    --button-primary-selected-font-color: #ffffff !important;
+    --button-primary-selected-hover-font-color: rgba(255, 255, 255, 0.95) !important;
+    --button-primary-selected-active-font-color: #ffffff !important;
+
+    /* Secondary buttons */
+    --button-secondary-background-color: #252541 !important;
+    --button-secondary-font-color: #f0f0f0 !important;
+    --button-secondary-hover-font-color: rgba(240, 240, 240, 0.8) !important;
+    --button-secondary-selected-background-color: #252541 !important;
+    --button-secondary-selected-font-color: #ff6ec7 !important;
+    --button-secondary-selected-hover-font-color: rgba(255, 110, 199, 0.8) !important;
+
+    /* Tertiary buttons */
+    --button-tertiary-background-color: #0f0f1e !important;
+    --button-tertiary-font-color: #f0f0f0 !important;
+    --button-tertiary-selected-font-color: #ff6ec7 !important;
+
+    /* Links */
+    --link-standard-color: #ff6ec7 !important;
+    --link-standard-focus-box-shadow: 0 0 0 2px #ff6ec7 !important;
+    --link-standard-hover-color: #ff8fd6 !important;
+    --link-primary-color: #f0f0f0 !important;
+    --link-primary-focus-box-shadow: 0 0 0 2px #ff6ec7 !important;
+    --link-secondary-color: #c0c0d0 !important;
+
+    /* Inputs */
+    --input-default-background-color: #0f0f1e !important;
+    --input-default-font-color: #f0f0f0 !important;
+    --input-placeholder-font-color: #6a6a7a !important;
+    --input-focused-border-color: #ff6ec7 !important;
+
+    /* Toggles */
+    --toggle-focused-box-shadow: 0 0 0 2px #ff6ec7 !important;
+    --toggle-on-body-color: #ff6ec7 !important;
+    --toggle-on-handle-color: #ffffff !important;
+    --toggle-off-body-color: #4a4a5e !important;
+    --toggle-off-handle-color: #c0c0d0 !important;
+}
+
+.playbackSoundBadge__showQueue,
+.creatorSubscriptionsButton,
+.sidebarModule__webiEmbeddedModule,
+.spotlightUpsellBanner__background,
+.sidebarContent {
+    display: none !important;
+}
+
+.header__logoLink {
+    background-size: contain !important;
+}
+
+.header {
+    background: linear-gradient(
+        90deg,
+        rgba(228, 3, 3, 0.15) 0%,
+        rgba(255, 140, 0, 0.15) 16.66%,
+        rgba(255, 237, 0, 0.15) 33.33%,
+        rgba(0, 128, 38, 0.15) 50%,
+        rgba(0, 76, 255, 0.15) 66.66%,
+        rgba(115, 41, 130, 0.15) 83.33%,
+        rgba(228, 3, 3, 0.15) 100%
+    ), rgba(15, 15, 30, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 16px !important;
+    border: 2px solid transparent !important;
+    border-image: linear-gradient(
+        90deg,
+        #e40303 0%,
+        #ff8c00 16.66%,
+        #ffed00 33.33%,
+        #008026 50%,
+        #004cff 66.66%,
+        #732982 83.33%,
+        #e40303 100%
+    ) 1 !important;
+    box-shadow: 
+        0 5px 30px rgba(255, 110, 199, 0.3),
+        inset 0 1px 1px rgba(255, 110, 199, 0.1) !important;
+    animation: rainbowShift 10s linear infinite;
+}
+
+.playControls__inner {
+    background: linear-gradient(
+        90deg,
+        rgba(228, 3, 3, 0.15) 0%,
+        rgba(255, 140, 0, 0.15) 16.66%,
+        rgba(255, 237, 0, 0.15) 33.33%,
+        rgba(0, 128, 38, 0.15) 50%,
+        rgba(0, 76, 255, 0.15) 66.66%,
+        rgba(115, 41, 130, 0.15) 83.33%,
+        rgba(228, 3, 3, 0.15) 100%
+    ), rgba(15, 15, 30, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    border-radius: 16px !important;
+    border: 2px solid transparent !important;
+    border-image: linear-gradient(
+        90deg,
+        #e40303 0%,
+        #ff8c00 16.66%,
+        #ffed00 33.33%,
+        #008026 50%,
+        #004cff 66.66%,
+        #732982 83.33%,
+        #e40303 100%
+    ) 1 !important;
+    box-shadow: 
+        0 -5px 30px rgba(255, 110, 199, 0.3),
+        inset 0 -1px 1px rgba(255, 110, 199, 0.1) !important;
+    animation: rainbowShift 10s linear infinite;
+}
+
+@keyframes rainbowShift {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sc-button.sc-button-secondary,
+.sc-button.sc-button-secondary:visited {
+    background: linear-gradient(135deg, rgba(37, 37, 65, 0.9) 0%, rgba(26, 26, 46, 0.9) 100%) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #f0f0f0 !important;
+    border: 2px solid transparent;
+    border-image: linear-gradient(
+        135deg,
+        #ff6ec7 0%,
+        #7c5cff 50%,
+        #ff6ec7 100%
+    ) 1;
+    border-radius: 12px;
+    padding: 8px 22px;
+    transition:
+        all 0.3s ease,
+        transform 0.2s ease;
+    box-shadow: 
+        0 4px 15px rgba(255, 110, 199, 0.2),
+        inset 0 1px 0 rgba(255, 110, 199, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.sc-button.sc-button-secondary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 110, 199, 0.3),
+        transparent
+    );
+    transition: left 0.5s ease;
+}
+
+.sc-button.sc-button-secondary:hover::before {
+    left: 100%;
+}
+
+/* Hover effect */
+.sc-button.sc-button-secondary:hover {
+    background: linear-gradient(135deg, rgba(255, 110, 199, 0.3) 0%, rgba(124, 92, 255, 0.3) 100%) !important;
+    transform: translateY(-2px);
+    box-shadow: 
+        0 6px 25px rgba(255, 110, 199, 0.4),
+        inset 0 1px 0 rgba(255, 110, 199, 0.2) !important;
+}
+
+.theme-dark,
+.theme-light,
+:root {
+    --special-color: #ff6ec7;
+    --special-rgb: 255, 110, 199;
+    --success-color: #7c5cff;
+    --success-rgb: 124, 92, 255;
+    --error-color: #ff5555;
+    --error-rgb: 255, 85, 85;
+    --white-color: #ffffff;
+    --white-rgb: 255, 255, 255;
+    --black-color: #0f0f1e;
+    --black-rgb: 15, 15, 30;
+    --goPlus-color: linear-gradient(135deg, #ff6ec7, #7c5cff);
+    --facebook-color: #ff6ec7;
+    --facebook-rgb: 255, 110, 199;
+    --twitter-color: #7c5cff;
+    --twitter-rgb: 124, 92, 255;
+    --pinterest-color: #ff6ec7;
+    --pinterest-rgb: 255, 110, 199;
+    --tumblr-color: #252541;
+    --tumblr-rgb: 37, 37, 65;
+    --transparent-color: transparent;
+    --success-surface-color: #3d3d5e;
+    --success-surface-rgb: 61, 61, 94;
+    --warning-surface-color: #5e4d3d;
+    --warning-surface-rgb: 94, 77, 61;
+    --error-surface-color: #5e3d3d;
+    --error-surface-rgb: 94, 61, 61;
+    --background-light-color: #ffffff;
+    --background-dark-color: #0f0f1e;
+    --input-default-border-color: transparent;
+    --input-placeholder-border-color: transparent;
+    --input-invalid-border-color: #ff5555;
+    --input-invalid-font-color: #ff5555;
+    --input-disabled-border-color: transparent;
+    --checkbox-default-background-color: transparent;
+    --checkbox-default-border-color: #6a6a7a;
+    --checkbox-checked-background-color: #ff6ec7;
+    --checkbox-checked-border-color: #ff6ec7;
+    --typography-root-font-size: 1.075em;
+    --typography-display3-font-size: 3.2857142857142856rem;
+    --typography-display3-font-weight: 700;
+    --typography-display3-line-height: 2.5714285714285716rem;
+    --typography-display3-letter-spacing: 0.02em;
+    --typography-display3-font: 700 2.2857142857142856rem/2.5714285714285716rem 'Nunito', 'Poppins', sans-serif;
+    --typography-display2-font-size: 2.857142857142857rem;
+    --typography-display2-font-weight: 700;
+    --typography-display2-line-height: 2.5714285714285716rem;
+    --typography-display2-letter-spacing: 0.02em;
+    --typography-display2-font: 700 2.857142857142857rem/2.5714285714285716rem 'Nunito', 'Poppins', sans-serif;
+    --typography-display1-font-size: 4.285714285714286rem;
+    --typography-display1-font-weight: 700;
+    --typography-display1-line-height: 2.5714285714285716rem;
+    --typography-display1-letter-spacing: 0.02em;
+    --typography-display1-font: 700 4.285714285714286rem/2.5714285714285716rem 'Nunito', 'Poppins', sans-serif;
+    --typography-heading1-font-size: 2rem;
+    --typography-heading1-font-weight: 700;
+    --typography-heading1-line-height: 2.5714285714285716rem;
+    --typography-heading1-font: 700 2rem/2.5714285714285716rem 'Nunito', 'Poppins', sans-serif;
+    --typography-heading2-font-size: 1.5714285714285714rem;
+    --typography-heading2-font-weight: 600;
+    --typography-heading2-line-height: 2rem;
+    --typography-heading2-font: 600 1.5714285714285714rem/2rem 'Nunito', 'Poppins', sans-serif;
+    --typography-heading3-font-size: 1.2142857142857142rem;
+    --typography-heading3-font-weight: 600;
+    --typography-heading3-line-height: 1.7142857142857142rem;
+    --typography-heading3-font: 600 1.2142857142857142rem/1.7142857142857142rem 'Nunito', 'Poppins', sans-serif;
+    --typography-heading4-font-size: 1rem;
+    --typography-heading4-font-weight: 600;
+    --typography-heading4-line-height: 1.4285714285714286rem;
+    --typography-heading4-font: 600 1rem/1.4285714285714286rem 'Nunito', 'Poppins', sans-serif;
+    --typography-body-font-size: 1rem;
+    --typography-body-font-weight: 400;
+    --typography-body-line-height: 1.4285714285714286rem;
+    --typography-body-font: 400 1rem/1.4285714285714286rem 'Nunito', 'Poppins', sans-serif;
+    --typography-body1-font-size: 1.2142857142857142rem;
+    --typography-body1-font-weight: 400;
+    --typography-body1-line-height: 1.7142857142857142rem;
+    --typography-body1-font: 400 1.2142857142857142rem/1.7142857142857142rem 'Nunito', 'Poppins', sans-serif;
+    --typography-body2-font-size: 1rem !important;
+    --typography-body2-font-weight: 400;
+    --typography-body2-line-height: 1.4285714285714286rem;
+    --typography-body2-font: 400 1rem/1.4285714285714286rem 'Nunito', 'Poppins', sans-serif;
+    --typography-heading5-font-size: 0.8571428571428571rem;
+    --typography-heading5-font-weight: 600;
+    --typography-heading5-line-height: 1.1428571428571428rem;
+    --typography-heading5-font: 600 0.8571428571428571rem/1.1428571428571428rem 'Nunito', 'Poppins', sans-serif;
+    --typography-captions-font-size: 0.8571428571428571rem;
+    --typography-captions-font-weight: 400;
+    --typography-captions-line-height: 1.1428571428571428rem;
+    --typography-captions-font: 400 0.8571428571428571rem/1.1428571428571428rem 'Nunito', 'Poppins', sans-serif;
+    --typography-heading6-font-size: 0.7142857142857143rem;
+    --typography-heading6-font-weight: 700;
+    --typography-heading6-letter-spacing: 0.1em;
+    --typography-heading6-line-height: 1.1428571428571428rem;
+    --typography-heading6-text-transform: uppercase;
+    --typography-heading6-font: 700 0.7142857142857143rem/1.1428571428571428rem 'Nunito', 'Poppins', sans-serif;
+    --typography-micro-font-size: 0.7142857142857143rem;
+    --typography-micro-font-weight: 700;
+    --typography-micro-letter-spacing: 0.1em;
+    --typography-micro-line-height: 1.1428571428571428rem;
+    --typography-micro-text-transform: uppercase;
+    --typography-micro-font: 700 0.7142857142857143rem/1.1428571428571428rem 'Nunito', 'Poppins', sans-serif;
+    --spacing-0_25x: 2px;
+    --spacing-0_5x: 4px;
+    --spacing-0_75x: 6px;
+    --spacing-1x: 8px;
+    --spacing-1_25x: 10px;
+    --spacing-1_5x: 12px;
+    --spacing-1_75x: 14px;
+    --spacing-2x: 16px;
+    --spacing-2_5x: 20px;
+    --spacing-3x: 24px;
+    --spacing-3_5x: 28px;
+    --spacing-4x: 32px;
+    --spacing-5x: 40px;
+    --spacing-6x: 48px;
+    --spacing-7x: 56px;
+    --spacing-8x: 64px;
+    --artwork-1x-size: 8px;
+    --artwork-2x-size: 16px;
+    --artwork-3x-size: 24px;
+    --artwork-4x-size: 32px;
+    --artwork-5x-size: 40px;
+    --artwork-6x-size: 48px;
+    --artwork-8x-size: 64px;
+    --artwork-13x-size: 104px;
+    --artwork-15x-size: 120px;
+    --artwork-16x-size: 128px;
+    --artwork-18x-size: 144px;
+    --artwork-20x-size: 160px;
+    --artwork-25x-size: 200px;
+    --artwork-29x-size: 232px;
+    --artwork-40x-size: 320px;
+    --artwork-42x-size: 336px;
+    --artwork-45x-size: 360px;
+    --artwork-64x-size: 512px;
+    --breakpoints-xs: 480;
+    --breakpoints-sm: 768;
+    --breakpoints-md: 1152;
+    --breakpoints-lg: 1440;
+    --breakpoints-xl: 1920;
+    --borderRadiuses-4: 8px;
+    --borderRadiuses-8: 12px;
+    --borderRadiuses-10: 14px;
+    --borderRadiuses-16: 20px;
+    --borderRadiuses-20: 24px;
+    --borderRadiuses-50: 50px;
+    --borderRadiuses-100: 100px;
+}
+
+/* Inclusive and welcoming aesthetic */
+body {
+    letter-spacing: 0.02em;
+}
+
+/* Soft rainbow glow */
+* {
+    text-shadow: 0 0 10px rgba(255, 110, 199, 0.3);
+}
+
+/* Animated rainbow gradient background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(228, 3, 3, 0.05) 0%,
+        rgba(255, 140, 0, 0.05) 14.28%,
+        rgba(255, 237, 0, 0.05) 28.57%,
+        rgba(0, 128, 38, 0.05) 42.85%,
+        rgba(0, 76, 255, 0.05) 57.14%,
+        rgba(115, 41, 130, 0.05) 71.42%,
+        rgba(228, 3, 3, 0.05) 85.71%,
+        rgba(255, 140, 0, 0.05) 100%
+    );
+    pointer-events: none;
+    z-index: 0;
+    animation: prideGradient 15s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes prideGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Subtle sparkle effect */
+body::after {
+    content: "✨💖🏳️‍🌈💜";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8rem;
+    opacity: 0.02;
+    pointer-events: none;
+    z-index: 0;
+    animation: sparkle 5s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.02;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        opacity: 0.05;
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+}
